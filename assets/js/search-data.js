@@ -429,16 +429,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-on-october-28-2024-raygauss-won-best-paper-algorithms-at-wacv-2025",
+          title: 'On October 28, 2024, RayGauss won Best Paper - Algorithms at WACV 2025....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-on-june-25-2025-our-paper-raygaussx-was-accepted-to-iccv-2025",
+          title: 'On June 25, 2025, our paper RayGaussX was accepted to ICCV 2025.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-on-september-15-2025-i-gave-a-presentation-at-the-gdr-igrv-event",
+          title: 'On September 15, 2025, I gave a presentation at the GDR-IGRV event.',
+          description: "",
+          section: "News",},{id: "news-on-march-2-2026-our-paper-was-accepted-to-cvpr-2026-with-a-cvpr-2026-highlight",
+          title: 'On March 2, 2026, our paper was accepted to CVPR 2026 with a...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -505,13 +506,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/hugobl1", "_blank");
-        },
-      },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
         },
       },{
         id: 'social-linkedin',
