@@ -186,6 +186,8 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - assets/img/publication_preview/candidates/
+  - assets/video/tutorial_al_folio.mp4
   - purgecss.config.js
   - README.md
   - readme_preview/
