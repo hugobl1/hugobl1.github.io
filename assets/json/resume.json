@@ -59,9 +59,7 @@
       "startDate": "2021-05-01",
       "endDate": "2021-08-31",
       "summary": "Research assistant on hyperspectral image classification with limited labelled data.",
-      "highlights": [
-        "Developed methods for hyperspectral image classification in low-label regimes."
-      ]
+      "highlights": ["Developed methods for hyperspectral image classification in low-label regimes."]
     },
     {
       "name": "Forum Trium",
@@ -85,9 +83,7 @@
       "startDate": "",
       "endDate": "",
       "summary": "Public demonstrations of 3D reconstruction and rendering research during the European Heritage Days at Mines Paris.",
-      "highlights": [
-        "Explained research topics in 3D computer vision and rendering to a broad public audience."
-      ]
+      "highlights": ["Explained research topics in 3D computer vision and rendering to a broad public audience."]
     }
   ],
   "education": [
@@ -100,11 +96,7 @@
       "startDate": "2022-10-01",
       "endDate": "",
       "score": "",
-      "courses": [
-        "3D scene reconstruction",
-        "Differentiable volumetric rendering",
-        "Implicit surface representations"
-      ]
+      "courses": ["3D scene reconstruction", "Differentiable volumetric rendering", "Implicit surface representations"]
     },
     {
       "institution": "ENS Paris-Saclay",
@@ -135,11 +127,7 @@
       "startDate": "2019-09-01",
       "endDate": "2022-06-30",
       "score": "",
-      "courses": [
-        "Applied mathematics for engineering",
-        "Scientific computing",
-        "Probability and statistics"
-      ]
+      "courses": ["Applied mathematics for engineering", "Scientific computing", "Probability and statistics"]
     },
     {
       "institution": "Lycée Claude Fauriel",
@@ -150,11 +138,7 @@
       "startDate": "2016-09-01",
       "endDate": "2018-06-30",
       "score": "",
-      "courses": [
-        "Advanced mathematics",
-        "Physics",
-        "Computer science basics"
-      ]
+      "courses": ["Advanced mathematics", "Physics", "Computer science basics"]
     }
   ],
   "awards": [
@@ -195,18 +179,7 @@
       "name": "Programming and tools",
       "level": "",
       "icon": "",
-      "keywords": [
-        "C++",
-        "Python",
-        "CUDA",
-        "OptiX",
-        "PyTorch",
-        "OpenCV",
-        "git",
-        "Optuna",
-        "TensorBoard",
-        "Unix/Linux development"
-      ]
+      "keywords": ["C++", "Python", "CUDA", "OptiX", "PyTorch", "OpenCV", "git", "Optuna", "TensorBoard", "Unix/Linux development"]
     },
     {
       "name": "Research topics",
@@ -244,12 +217,7 @@
     {
       "name": "3D Computer Vision and Graphics",
       "icon": "",
-      "keywords": [
-        "3D scene reconstruction",
-        "Novel view synthesis",
-        "Implicit neural representations",
-        "Rendering"
-      ]
+      "keywords": ["3D scene reconstruction", "Novel view synthesis", "Implicit neural representations", "Rendering"]
     }
   ],
   "references": [],
@@ -257,10 +225,7 @@
     {
       "name": "RayGauss",
       "summary": "Volumetric Gaussian-based ray casting method for photorealistic novel view synthesis, improving both quality and efficiency over Neural Radiance Fields and 3D Gaussian Splatting.",
-      "highlights": [
-        "Best Paper Award at WACV 2025.",
-        "Public project page with results and code."
-      ],
+      "highlights": ["Best Paper Award at WACV 2025.", "Public project page with results and code."],
       "startDate": "2023-01-01",
       "endDate": "",
       "url": "https://raygauss.github.io/"
@@ -268,10 +233,7 @@
     {
       "name": "RayGaussX",
       "summary": "Accelerated Gaussian-based ray marching approach designed for real-time and high-quality novel view synthesis.",
-      "highlights": [
-        "Accepted at ICCV 2025.",
-        "Demonstrates real-time rendering capabilities on complex 3D scenes."
-      ],
+      "highlights": ["Accepted at ICCV 2025.", "Demonstrates real-time rendering capabilities on complex 3D scenes."],
       "startDate": "2024-01-01",
       "endDate": "",
       "url": "https://raygaussx.github.io/"
