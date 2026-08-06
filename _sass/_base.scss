@@ -196,7 +196,8 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: auto;
+  max-width: 360px;
 
   .more-info {
     margin-bottom: 5px;
@@ -749,9 +750,6 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
-      }
-
       .abbr {
         margin-bottom: 0.5rem;
 
@@ -822,9 +820,32 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
+        .award {
+          border: 1px solid var(--global-highlight-color);
+          background: color-mix(in srgb, var(--global-bg-color) 86%, var(--global-highlight-color) 14%);
+          color: var(--global-highlight-color);
+          font-weight: 600;
+          padding-left: 0.85rem;
         }
+        .award:before {
+          content: "🏆 ";
+        }
+      }
+      .award-line {
+        margin-bottom: 0.35rem;
+      }
+      .award-badge {
+        border: 1px solid var(--global-highlight-color);
+        background: color-mix(in srgb, var(--global-bg-color) 86%, var(--global-highlight-color) 14%);
+        color: var(--global-highlight-color);
+        font-weight: 600;
+        padding: 0.24rem 0.75rem;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+      }
+      .award-badge:before {
+        content: "🏆 ";
       }
 
       .badges {

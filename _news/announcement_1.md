@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: CVPR 2026 highlight
+date: 2026-03-02 09:00:00+0200
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+On March 2, 2026, our paper was accepted to CVPR 2026 with a **CVPR 2026 Highlight**.
