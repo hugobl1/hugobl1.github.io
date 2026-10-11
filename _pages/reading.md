@@ -6,6 +6,23 @@ description: Papers I have read, organized into thematic reading paths around my
 nav: true
 nav_order: 2.5
 _styles: |
+  .reading-category > summary {
+    cursor: pointer;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1rem;
+  }
+  .reading-path > summary {
+    cursor: pointer;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 1rem 0;
+  }
+  .reading-category > summary:focus-visible,
+  .reading-path > summary:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 4px;
+  }
   .reading-status {
     display: inline-block;
     padding: 0.2rem 0.65rem;
@@ -29,11 +46,13 @@ _styles: |
 
 **Reading status:** <span class="reading-status reading-status--read">Read</span> already read · <span class="reading-status reading-status--to-read">To read</span> on my reading list.
 
-## Multi-view Stereo
+<details class="reading-category" markdown="1" open>
+<summary>Multi-view Stereo</summary>
 
 Reading paths on recovering dense 3D geometry from multiple images.
 
-### PatchMatch: from image correspondence to multi-view stereo
+<details class="reading-path" markdown="1" open>
+<summary>PatchMatch: from image correspondence to multi-view stereo</summary>
 
 This reading list follows the evolution of PatchMatch, from fast patch correspondence to dense stereo and multi-view 3D reconstruction. It connects efficient hypothesis propagation with the geometric constraints needed to recover scene structure.
 
@@ -91,3 +110,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 5483–5492.
 **Reading focus:** Examine how view selection and geometric consistency make hypothesis propagation reliable across multiple images, and why coarse-to-fine reconstruction helps in regions with little texture.
 
 [PDF](https://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_Multi-Scale_Geometric_Consistency_Guided_Multi-View_Stereo_CVPR_2019_paper.pdf) · [Code: ACMH](https://github.com/GhiXu/ACMH) · [Code: ACMM](https://github.com/GhiXu/ACMM)
+
+</details>
+
+</details>
