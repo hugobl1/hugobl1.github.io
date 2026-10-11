@@ -21,7 +21,7 @@ Start with the propagation and random search principles, then see how they exten
 
 **Connelly Barnes, Eli Shechtman, Adam Finkelstein, and Dan B. Goldman · SIGGRAPH 2009**
 
-*PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing.*  
+_PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing._  
 ACM Transactions on Graphics, 28(3), Article 24.
 
 **Contribution:** Fast approximate patch correspondence through propagation of neighboring matches and random search. The algorithm exploits spatial coherence to efficiently find useful matches for structural image editing.
@@ -36,7 +36,7 @@ ACM Transactions on Graphics, 28(3), Article 24.
 
 **Michael Bleyer, Christoph Rhemann, and Carsten Rother · BMVC 2011**
 
-*PatchMatch Stereo: Stereo Matching with Slanted Support Windows.*  
+_PatchMatch Stereo: Stereo Matching with Slanted Support Windows._  
 British Machine Vision Conference, pp. 1–11.
 
 **Contribution:** Dense disparity estimation by optimizing a 3D plane hypothesis at each pixel. Slanted support windows model surface orientation, while spatial and cross-view propagation transfer promising hypotheses.
@@ -51,7 +51,7 @@ British Machine Vision Conference, pp. 1–11.
 
 **Qingshan Xu and Wenbing Tao · CVPR 2019**
 
-*Multi-Scale Geometric Consistency Guided Multi-View Stereo.*  
+_Multi-Scale Geometric Consistency Guided Multi-View Stereo._  
 IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 5483–5492.
 
 **Contribution:** PatchMatch-based multi-view stereo using adaptive checkerboard propagation and multi-hypothesis view selection (ACMH). ACMM extends this foundation with multi-scale geometric consistency to improve reconstruction in weakly textured regions.
