@@ -151,3 +151,37 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 5483–5492.
 </details>
 
 </details>
+
+<details class="reading-category" markdown="1">
+<summary>Monte Carlo Rendering</summary>
+
+Reading paths on sampling strategies and variance reduction for physically based rendering.
+
+<details class="reading-path" markdown="1">
+<summary>Multiple importance sampling</summary>
+
+#### 1. Optimally Combining Sampling Techniques for Monte Carlo Rendering
+
+<span class="reading-status reading-status--to-read">To read</span>
+
+**Eric Veach and Leonidas J. Guibas · SIGGRAPH 1995**
+
+_Optimally Combining Sampling Techniques for Monte Carlo Rendering._  
+Proceedings of SIGGRAPH ’95, pp. 419–428.
+
+<figure class="reading-figure">
+  <a href="https://graphics.stanford.edu/papers/combine/">
+    <img src="{{ '/assets/img/reading/veach-guibas-multiple-importance-sampling.jpg' | relative_url }}" width="500" height="458" loading="lazy" alt="Glossy surfaces illuminated by four differently sized area lights, rendered by combining light-source and BRDF samples.">
+  </a>
+  <figcaption>Glossy highlights using a weighted combination of light-source and BRDF samples with the power heuristic. Figure 2(c) from Veach and Guibas (1995). <a href="https://graphics.stanford.edu/papers/combine/">Source: authors’ project page</a>.</figcaption>
+</figure>
+
+**Contribution:** Introduces multiple importance sampling: weighted combinations of samples from several distributions produce unbiased Monte Carlo estimators with reduced variance, including applications to glossy lighting and bidirectional path tracing.
+
+**Reading focus:** Understand how the balance and power heuristics combine complementary sampling strategies, and why combining light-source and BRDF sampling improves robustness.
+
+[Paper & figures](https://graphics.stanford.edu/papers/combine/) · [DOI: 10.1145/218380.218498](https://doi.org/10.1145/218380.218498)
+
+</details>
+
+</details>
