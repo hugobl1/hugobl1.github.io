@@ -7,7 +7,11 @@ nav: true
 nav_order: 2.5
 ---
 
-## PatchMatch: from image correspondence to multi-view stereo
+## Multi-view Stereo
+
+Reading paths on recovering dense 3D geometry from multiple images.
+
+### PatchMatch: from image correspondence to multi-view stereo
 
 This reading list follows the evolution of PatchMatch, from fast patch correspondence to dense stereo and multi-view 3D reconstruction. It connects efficient hypothesis propagation with the geometric constraints needed to recover scene structure.
 
@@ -17,7 +21,7 @@ Start with the propagation and random search principles, then see how they exten
 
 ---
 
-### 1. PatchMatch
+#### 1. PatchMatch
 
 **Connelly Barnes, Eli Shechtman, Adam Finkelstein, and Dan B. Goldman · SIGGRAPH 2009**
 
@@ -32,7 +36,7 @@ ACM Transactions on Graphics, 28(3), Article 24.
 
 ---
 
-### 2. PatchMatch Stereo
+#### 2. PatchMatch Stereo
 
 **Michael Bleyer, Christoph Rhemann, and Carsten Rother · BMVC 2011**
 
@@ -47,7 +51,7 @@ British Machine Vision Conference, pp. 1–11.
 
 ---
 
-### 3. ACMH / ACMM
+#### 3. ACMH / ACMM
 
 **Qingshan Xu and Wenbing Tao · CVPR 2019**
 
