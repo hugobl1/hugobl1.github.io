@@ -6,6 +6,22 @@ description: Papers I have read, organized into thematic reading paths around my
 nav: true
 nav_order: 2.5
 _styles: |
+  .reading-figure {
+    margin: 1.25rem 0;
+  }
+  .reading-figure img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 4px;
+  }
+  .reading-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
   .reading-category > summary {
     cursor: pointer;
     font-size: 1.75rem;
@@ -46,12 +62,12 @@ _styles: |
 
 **Reading status:** <span class="reading-status reading-status--read">Read</span> already read · <span class="reading-status reading-status--to-read">To read</span> on my reading list.
 
-<details class="reading-category" markdown="1" open>
+<details class="reading-category" markdown="1">
 <summary>Multi-view Stereo</summary>
 
 Reading paths on recovering dense 3D geometry from multiple images.
 
-<details class="reading-path" markdown="1" open>
+<details class="reading-path" markdown="1">
 <summary>PatchMatch: from image correspondence to multi-view stereo</summary>
 
 This reading list follows the evolution of PatchMatch, from fast patch correspondence to dense stereo and multi-view 3D reconstruction. It connects efficient hypothesis propagation with the geometric constraints needed to recover scene structure.
@@ -71,6 +87,13 @@ Start with the propagation and random search principles, then see how they exten
 _PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing._  
 ACM Transactions on Graphics, 28(3), Article 24.
 
+<figure class="reading-figure">
+  <a href="https://pixl.cs.princeton.edu/gfx/pubs/Barnes_2009_PAR/patchmatch.pdf">
+    <img src="{{ '/assets/img/reading/patchmatch-structural-editing.webp' | relative_url }}" width="893" height="139" loading="lazy" alt="Six temple images demonstrating hole filling, constrained retargeting and reshuffling with PatchMatch.">
+  </a>
+  <figcaption>Structural image editing. Figure 1 from Barnes et al. (2009). <a href="https://pixl.cs.princeton.edu/gfx/pubs/Barnes_2009_PAR/patchmatch.pdf">Source PDF</a>.</figcaption>
+</figure>
+
 **Contribution:** Fast approximate patch correspondence through propagation of neighboring matches and random search. The algorithm exploits spatial coherence to efficiently find useful matches for structural image editing.
 
 **Reading focus:** Understand how propagation and random search complement each other—the foundation of the stereo methods below.
@@ -88,6 +111,13 @@ ACM Transactions on Graphics, 28(3), Article 24.
 _PatchMatch Stereo: Stereo Matching with Slanted Support Windows._  
 British Machine Vision Conference, pp. 1–11.
 
+<figure class="reading-figure">
+  <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2011/01/PatchMatchStereo_BMVC2011_6MB.pdf">
+    <img src="{{ '/assets/img/reading/patchmatch-stereo-slanted-windows.webp' | relative_url }}" width="790" height="183" loading="lazy" alt="Corridor scene comparing ground truth, fronto-parallel disparity estimates and reconstruction with slanted support windows.">
+  </a>
+  <figcaption>Slanted support windows improve reconstruction of inclined surfaces. Figure 2 from Bleyer et al. (2011). <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2011/01/PatchMatchStereo_BMVC2011_6MB.pdf">Source PDF</a>.</figcaption>
+</figure>
+
 **Contribution:** Dense disparity estimation by optimizing a 3D plane hypothesis at each pixel. Slanted support windows model surface orientation, while spatial and cross-view propagation transfer promising hypotheses.
 
 **Reading focus:** Follow the shift from patch offsets to plane hypotheses, and how this reduces the fronto-parallel bias of conventional support windows.
@@ -104,6 +134,13 @@ British Machine Vision Conference, pp. 1–11.
 
 _Multi-Scale Geometric Consistency Guided Multi-View Stereo._  
 IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 5483–5492.
+
+<figure class="reading-figure">
+  <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_Multi-Scale_Geometric_Consistency_Guided_Multi-View_Stereo_CVPR_2019_paper.pdf">
+    <img src="{{ '/assets/img/reading/acmm-checkerboard-propagation.webp' | relative_url }}" width="419" height="162" loading="lazy" alt="Three diagrams comparing sequential, symmetric checkerboard and adaptive checkerboard propagation.">
+  </a>
+  <figcaption>Sequential, symmetric checkerboard and adaptive checkerboard propagation. Figure 1 from Xu and Tao (2019). <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_Multi-Scale_Geometric_Consistency_Guided_Multi-View_Stereo_CVPR_2019_paper.pdf">Source PDF</a>.</figcaption>
+</figure>
 
 **Contribution:** PatchMatch-based multi-view stereo using adaptive checkerboard propagation and multi-hypothesis view selection (ACMH). ACMM extends this foundation with multi-scale geometric consistency to improve reconstruction in weakly textured regions.
 
