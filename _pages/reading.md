@@ -5,7 +5,29 @@ permalink: /reading/
 description: Papers I have read, organized into thematic reading paths around my research interests.
 nav: true
 nav_order: 2.5
+_styles: |
+  .reading-status {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .reading-status--read {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #86efac;
+  }
+  .reading-status--to-read {
+    color: #854d0e;
+    background: #fef3c7;
+    border-color: #fcd34d;
+  }
 ---
+
+**Reading status:** <span class="reading-status reading-status--read">Read</span> already read · <span class="reading-status reading-status--to-read">To read</span> on my reading list.
 
 ## Multi-view Stereo
 
@@ -23,6 +45,8 @@ Start with the propagation and random search principles, then see how they exten
 
 #### 1. PatchMatch
 
+<span class="reading-status reading-status--read">Read</span>
+
 **Connelly Barnes, Eli Shechtman, Adam Finkelstein, and Dan B. Goldman · SIGGRAPH 2009**
 
 _PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing._  
@@ -38,6 +62,8 @@ ACM Transactions on Graphics, 28(3), Article 24.
 
 #### 2. PatchMatch Stereo
 
+<span class="reading-status reading-status--read">Read</span>
+
 **Michael Bleyer, Christoph Rhemann, and Carsten Rother · BMVC 2011**
 
 _PatchMatch Stereo: Stereo Matching with Slanted Support Windows._  
@@ -52,6 +78,8 @@ British Machine Vision Conference, pp. 1–11.
 ---
 
 #### 3. ACMH / ACMM
+
+<span class="reading-status reading-status--read">Read</span>
 
 **Qingshan Xu and Wenbing Tao · CVPR 2019**
 
