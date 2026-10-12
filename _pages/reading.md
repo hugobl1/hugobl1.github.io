@@ -53,6 +53,11 @@ _styles: |
     background: #dcfce7;
     border-color: #86efac;
   }
+  .reading-status--revisit {
+    color: #1e40af;
+    background: #dbeafe;
+    border-color: #93c5fd;
+  }
   .reading-status--to-read {
     color: #854d0e;
     background: #fef3c7;
@@ -60,7 +65,7 @@ _styles: |
   }
 ---
 
-**Reading status:** <span class="reading-status reading-status--read">Read</span> already read · <span class="reading-status reading-status--to-read">To read</span> on my reading list.
+**Reading status:** <span class="reading-status reading-status--read">Read</span> already read · <span class="reading-status reading-status--to-read">To read</span> on my reading list · <span class="reading-status reading-status--revisit">Read · revisit</span> read once, needs a closer reread for full understanding.
 
 <details class="reading-category" markdown="1">
 <summary>Multi-view Stereo</summary>
@@ -181,6 +186,40 @@ Proceedings of SIGGRAPH ’95, pp. 419–428.
 **Reading focus:** Understand how the balance and power heuristics combine complementary sampling strategies, and why combining light-source and BRDF sampling improves robustness.
 
 [Paper & figures](https://graphics.stanford.edu/papers/combine/) · [DOI: 10.1145/218380.218498](https://doi.org/10.1145/218380.218498)
+
+</details>
+
+</details>
+
+<details class="reading-category" markdown="1">
+<summary>Streaming 3D Reconstruction</summary>
+
+Reading paths on online camera tracking and scene reconstruction from long video sequences.
+
+<details class="reading-path" markdown="1">
+<summary>Local context and long-horizon consistency</summary>
+
+#### 1. Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction
+
+<span class="reading-status reading-status--revisit">Read · revisit</span>
+
+**Jiarong Han, Jincheng Xiong, Yuzhou Liu, Linzhe Shi, Changjie Wu, Ning Guo, Mu Xu, Hang Zhang, and Ming Qian · 2026**
+
+_Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction._  
+arXiv preprint, arXiv:2608.27529.
+
+<figure class="reading-figure">
+  <a href="https://amap-cvlab.github.io/ABot-Recon-html/">
+    <img src="{{ '/assets/img/reading/abot-recon-overview.png' | relative_url }}" width="2406" height="1553" loading="lazy" alt="ABot-Recon reconstruction of an extended outdoor route with colored camera trajectories and reconstructed scene geometry.">
+  </a>
+  <figcaption>Long-sequence reconstruction with ABot-Recon. <a href="https://amap-cvlab.github.io/ABot-Recon-html/">Source: authors’ project page</a>.</figcaption>
+</figure>
+
+**Contribution:** ABot-Recon uses a fixed local context of the current frame and 11 preceding frames to predict camera-frame point maps and adjacent-frame relative poses. Sequential composition recovers global geometry and trajectories, while a temporal rotation refiner and composition-aware pose loss help reduce accumulated drift.
+
+**Rereading focus:** Study reference-frame equivariance, relative-pose composition, the temporal rotation refiner and the multi-step pose loss to understand how a bounded local context supports long-horizon reconstruction.
+
+[Paper](https://arxiv.org/abs/2608.27529) · [PDF](https://arxiv.org/pdf/2608.27529) · [Project](https://amap-cvlab.github.io/ABot-Recon-html/) · [Code](https://github.com/amap-cvlab/ABot-Recon)
 
 </details>
 
